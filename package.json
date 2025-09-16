@@ -1,7 +1,7 @@
 {
   "name": "warp_notes",
   "version": "1.0.0",
-  "description": "Warp Notes API",
+  "description": "Warp Notes API with integrated frontend",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
