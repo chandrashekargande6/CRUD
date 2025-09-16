@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warp Notes</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #2c3e50; }
+    .note { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
+    input, textarea { width: 100%; padding: 5px; margin: 5px 0; }
+    button { padding: 5px 10px; margin-right: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Warp Notes</h1>
+
+  <div>
+    <h3>Create / Update Note</h3>
+    <input type="hidden" id="note-id">
+    <input type="text" id="note-title" placeholder="Title">
+    <textarea id="note-content" placeholder="Content"></textarea>
+    <button onclick="saveNote()">Save Note</button>
+    <button onclick="resetForm()">Clear</button>
+  </div>
+
+  <h3>All Notes</h3>
+  <div id="notes-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
